@@ -79,7 +79,7 @@ controller:
 
     ## The entries of the ConfigMap for customizing NGINX configuration.
     entries:
-      error-log-level: "info"
+      error-log-level: "debug"
 
   ## It is recommended to use your own TLS certificates and keys
   defaultTLS:
