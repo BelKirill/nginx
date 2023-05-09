@@ -3,7 +3,7 @@ apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
   name: {{ include "nginx-ingress.controller.fullname" . }}
-  namespace: {{ .Release.Namespace }}
+  namespace: {{ .Values.Namespace }}
   labels:
     {{- include "nginx-ingress.labels" . | nindent 4 }}
   {{- if .Values.controller.serviceMonitor.labels -}}

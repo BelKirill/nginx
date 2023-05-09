@@ -1,3 +1,5 @@
+Namespace: nginx-ingress
+
 controller:
   ## The name of the Ingress Controller daemonset or deployment.
   name: controller

@@ -198,7 +198,7 @@ metadata:
 subjects:
 - kind: ServiceAccount
   name: {{ include "nginx-ingress.serviceAccountName" . }}
-  namespace: {{ .Release.Namespace }}
+  namespace: {{ .Values.Namespace }}
 roleRef:
   kind: ClusterRole
   name: {{ include "nginx-ingress.fullname" . }}
