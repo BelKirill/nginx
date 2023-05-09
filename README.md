@@ -1,5 +1,7 @@
 # NGINX Ingress Controller Helm Chart
 
+## Foreword
+This chart was modified to deploy to the nginx-ingress namespace.
 ## Introduction
 
 This chart deploys the NGINX Ingress Controller in your Kubernetes cluster.
