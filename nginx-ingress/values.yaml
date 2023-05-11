@@ -322,13 +322,13 @@ controller:
       enable: true
 
       ## The HTTP port of the Ingress Controller service.
-      port: 8080
+      port: 80
 
       ## The custom NodePort for the HTTP port. Requires controller.service.type set to NodePort.
       # nodePort: 80
 
       ## The HTTP port on the POD where the Ingress Controller service is running.
-      targetPort: 8080
+      targetPort: 80
 
     httpsPort:
       ## Enables the HTTPS port for the Ingress Controller service.

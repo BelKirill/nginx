@@ -15,7 +15,7 @@ spec:
   ports:
 {{- if .Values.service.http.enable }}
   - name: http
-    protocol: tcp
+    protocol: TCP
     port: {{ .Values.service.http.port }}
     targetPort: 80
 {{- end }}

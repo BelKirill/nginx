@@ -12,7 +12,7 @@ deploy:
   imageRepo: nginx
   imageTag: latest
   imageDigest: ""
-  imagePullPolicy: ifNotPresent
+  imagePullPolicy: IfNotPresent
 
 volumes:
   html:
@@ -30,7 +30,7 @@ service:
 
   http:
     enable: true
-    port: 8080
+    port: 80
 
 ingress:
   name: main-site

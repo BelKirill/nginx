@@ -64,6 +64,6 @@ Expand image name.
 {{- if .Values.deploy.imageDigest -}}
 {{- printf "%s@%s" .Values.deploy.imageRepo .Values.deploy.imageDigest -}}
 {{- else -}}
-{{- printf "%s:%s" .Values.deploy.imageRepo (include "nginx-ingress.tag" .) -}}
+{{- printf "%s:%s" .Values.deploy.imageRepo (include "nginx-web.tag" .) -}}
 {{- end -}}
 {{- end -}}

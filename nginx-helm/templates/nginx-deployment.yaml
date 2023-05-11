@@ -20,8 +20,8 @@ spec:
     spec:
       containers:
         - name: {{ include "nginx-web.name" . }}
+          image: {{ include "nginx-web.image" . }}
           imagePullPolicy: {{ .Values.deploy.imagePullPolicy }}
-          image: {{ .Values.deploy.imageName }}
           ports:
             - containerPort: {{ .Values.deploy.port }}
           volumeMounts:
