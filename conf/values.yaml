@@ -1,0 +1,9 @@
+# Global overrides
+namespace: nginx-web
+nameOverride: ""
+fullNameOverride: ""
+      
+config:
+  html:
+    name: nginx-html-config
+    annotations: {}
