@@ -1,5 +1,4 @@
 apiVersion: v2
-kubeVersion: '>= 1.22.0-0'
 
 name: nginx-web-conf
 description: NGINX web-server configuration and content

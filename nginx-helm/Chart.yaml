@@ -1,5 +1,4 @@
 apiVersion: v2
-kubeVersion: '>= 1.22.0-0'
 
 name: nginx
 description: NGINX web-server
