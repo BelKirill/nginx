@@ -21,7 +21,7 @@ volumes:
     config: nginx-html-config
   conf:
     name: nginx-conf-storage
-    mount: /usr/share/nginx/conf.d
+    mount: /etc/nginx/conf.d
     config: nginx-config
 
 service:
