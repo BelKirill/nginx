@@ -27,7 +27,12 @@ spec:
           volumeMounts:
             - mountPath: {{ .Values.volumes.html.mount }}
               name: {{ .Values.volumes.html.name }}
+            - mountPath: {{ .Values.volumes.conf.mount }}
+              name: {{ .Values.volumes.conf.name }}
       volumes:
         - name: {{ .Values.volumes.html.name }}
           configMap:
             name: {{ .Values.volumes.html.config }}
+        - name: {{ .Values.volumes.conf.name }}
+          configMap:
+            name: {{ .Values.volumes.conf.config }}
