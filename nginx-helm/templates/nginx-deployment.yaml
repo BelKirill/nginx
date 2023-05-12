@@ -30,4 +30,4 @@ spec:
       volumes:
         - name: {{ .Values.volumes.html.name }}
           configMap:
-            name: {{ .Values.config.html.name }}
+            name: {{ .Values.volumes.html.config }}

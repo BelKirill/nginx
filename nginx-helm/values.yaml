@@ -18,6 +18,7 @@ volumes:
   html:
     name: nginx-html-storage
     mount: /usr/share/nginx/html
+    config: nginx-html-config
 
 service:
   name: ""
